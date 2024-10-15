@@ -1,5 +1,5 @@
 <x-layout>
-  <form action="" method="">
+  <form action="{{ route('ninjas.store') }}" method="POST">
     <!-- CSRF token for security -->
     @csrf
 
@@ -37,7 +37,7 @@
     <select id="dojo_id" name="dojo_id" required>
       <option value="" disabled selected>Select a dojo</option>
       @foreach ($dojos as $dojo)
-        <option value="{{ $dojo->id }}" {{ old('dojo_id') == $dojo->id ? 'selected' : '' }}>
+        <option value="{{ $dojo->id }}">
           {{ $dojo->name }}
         </option>
       @endforeach
