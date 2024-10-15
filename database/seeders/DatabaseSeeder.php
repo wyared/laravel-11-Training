@@ -21,6 +21,10 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
+          DojoSeeder::class,
+        ]);
+
+        $this->call([
           NinjaSeeder::class,
         ]);
     }
