@@ -18,7 +18,7 @@
   </div>
 
   {{-- delete button --}}
-  <form action="{{ route('ninjas.destroy', $ninja) }}" method="POST">
+  <form action="{{ route('ninjas.destroy', $ninja->id) }}" method="POST">
     @csrf
     @method('DELETE')
 
