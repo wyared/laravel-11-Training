@@ -29,17 +29,5 @@
   <main class="container">
     {{ $slot }}
   </main>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var flash = document.getElementById('flash');
-      
-      if (flash) {
-        setTimeout(function () {
-          flash.remove(); 
-        }, 2000);
-      }
-    });
-  </script>
 </body>
 </html>
